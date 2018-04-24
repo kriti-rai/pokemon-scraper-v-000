@@ -5,10 +5,11 @@ class Pokemon
 
   @@all = []
 
-  def initialize(hp=60, db)
+  def initialize(hp=nil, db)
     @db = db
     @name = name
     @type = type
+
     @@all << self
   end
 
@@ -27,7 +28,7 @@ class Pokemon
   end
 
   def alter_hp(new_hp, db)
-    Pokemon.find(self.id,db).hp = new_hp
+    Pokemon.find(self.id,db).hp= new_hp
   end
 
 end
