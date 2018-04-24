@@ -26,8 +26,8 @@ class Pokemon
     pokemon
   end
 
-  def alter_hp(hp, db)
-    self.hp = hp
+  def alter_hp(new_hp,id, db)
+    self.find(id,db).hp = new_hp
   end
 
 end
