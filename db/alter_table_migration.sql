@@ -1,0 +1,1 @@
+UPATE TABLE pokemon ADD hp INTEGER;
