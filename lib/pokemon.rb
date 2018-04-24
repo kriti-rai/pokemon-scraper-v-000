@@ -27,7 +27,7 @@ class Pokemon
   end
 
   def alter_hp(hp, db)
-    Pokemon.find(self.id, db).healthpower = hp
+    Pokemon.find(self.id, db).hp = hp
   end
 
 end
