@@ -1,7 +1,6 @@
 require 'pry'
 class Pokemon
-  attr_accessor :name, :type, :db, :id
-  attr_reader :hp
+  attr_accessor :name, :type, :db, :id, :hp
 
   @@all = []
 
